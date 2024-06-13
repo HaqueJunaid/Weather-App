@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="inputsection">
+            <input type="text" placeholder="Enter the location...">
+            <i class="ri-search-line"></i>
+        </div>
+        <div class="weather">
+            <div class="heading">
+                <h1 id="cityName">Tokyo</h1>
+            </div>
+            <div class="weather-image">
+                <img  src="" alt="">
+            </div>
+            <div class="temp">
+                <h1 id="temp">22°C</h1>
+                <h6 id="feels"></h6>
+            </div>
+            <div class="more-temp">
+                <div class="humdity mt">
+                    <div class="img">
+                        <img id="images" src="./images/humidity.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="title">humidity</p>
+                        <p class="amt" id="humid">40%</p>
+                    </div>
+                </div>
+                <div class="wind mt">
+                    <div class="img">
+                        <img src="./images/wind.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="title">Wind</p>
+                        <p class="amt" id="wind">4 Km/s</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

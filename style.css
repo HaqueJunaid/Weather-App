@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --bg-color-first: #100f11;
+    --text-first: #fff;
+    --text-second: #9a7cf8;
+    --text-third: #60b478;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg-color-first);
+    color: var(--text-first);
+    padding: 1.5em 2em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.inputsection {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.3em;
+    margin-bottom: 2em;
+}
+
+input {
+    padding: 0.8em 1.5em;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 5em;
+    font-size: 0.9em;
+}
+
+.inputsection i {
+    background-color: white;
+    color: #100f11;
+    padding: 0 0.7em;
+    height: 100%;
+    font-size: 1em;
+    border-radius: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-size: 2.6em;
+    position: relative;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.heading h1::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.weather-image {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.weather-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.temp h1 {
+    font-size: 4em;
+    font-weight: 500;
+    line-height: 80%;
+    margin-bottom: 4px;
+}
+
+.temp h6 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #9a7cf8;
+    letter-spacing: 0.2px;
+}
+
+.more-temp  {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2em;
+}
+
+.mt {
+    display: flex;
+    gap: 0.8em;
+    align-items: center;
+    justify-content: center;
+}
+
+.mt .img {
+    width: fit-content;
+    height: fit-content;
+}
+
+.img img {
+    width: 2em;
+}
+
+.mt .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.text .title {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: var(--text-third);
+    font-weight: 600;
+    line-height: 90%;
+}
+
+.text .amt {
+    font-size: 0.7em;
+    color: rgb(212, 212, 212);
+}
