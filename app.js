@@ -37,7 +37,24 @@ async function showWeather(city) {
         weatherImage.src = "./images/snow.png"
     } else if (data.weather[0].main == "Fog") {
         weatherImage.src = "./images/Mist.png"
+    } else if (data.weather[1].main == "Rain") {
+        weatherImage.src = "./images/rain.png"
+    } else if (data.weather[1].main == "Clear") {
+        weatherImage.src = "./images/clear.png"
+    } else if (data.weather[1].main == "Drizzle") {
+        weatherImage.src = "./images/drizzle.png"
+    } else if (data.weather[1].main == "Mist") {
+        weatherImage.src = "./images/mist.png"
+    } else if (data.weather[1].main == "Snow") {
+        weatherImage.src = "./images/snow.png"
+    } else if (data.weather[1].main == "Fog") {
+        weatherImage.src = "./images/Mist.png"
+    } else if (data.weather[1].main == "Mist") {
+        weatherImage.src = "./images/Mist.png"
+    } else if (data.weather[0].main == "Haze") {
+        weatherImage.src = "./images/Mist.png"
     }
+
 
 }
 
